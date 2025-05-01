@@ -18,8 +18,12 @@ mkdir /opt/Tools/Packages && mv go1* /opt/Tools/Packages/
 sudo apt-get install python3.9 -y
 apt install python3-pip
 
-# Instalação de Ferramentas
+# Instalação de Ferramentas Para Pentest
 mkdir /opt/Tools/github/
 cd /opt/Tools/github/ && git clone https://github.com/OJ/gobuster.git && cd gobuster && go get && go build && go install
 apt install -y burpsuite
 mkdir /usr/share/wordlists/Seclists && cd /usr/share/wordlists/Seclists/ && git clone https://github.com/danielmiessler/SecLists.git
+
+# Instalação de Ferramentas Para Windows
+mkdir /opt/Tools/windows-resoures
+wget https://the.earth.li/~sgtatham/putty/latest/w64/plink.exe -O /opt/Tools/windows-resources/plink.exe
