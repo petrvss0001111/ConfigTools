@@ -10,6 +10,7 @@ apt install nc -y
 # Instalação Ferramentas Essenciais II
 apt install mysql postgresql openssh-client -y
 apt install tcpdump -y
+apt install openssh -y
 
 mkdir /opt/Tools
 
