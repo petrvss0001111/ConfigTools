@@ -3,6 +3,7 @@
 
 ## Installation
 - Instalação da ferramenta com bash
+- Attention: Execute as root/admin.
 
 ```bash
   cd /opt/ && git clone https://github.com/0xPetrvs/ToolsFile.git
