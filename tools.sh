@@ -1,8 +1,15 @@
 #!/bin/bash
 
-apt install net-tools -y
-apt install mysql postgresql -y
+# Essencials
 apt install wget curl -y
+apt install git make gcc -y
+apt install net-tools -y
+apt install libpcap-dev -y
+apt install nc -y
+
+# Instalação Ferramentas Essenciais II
+apt install mysql postgresql openssh-client -y
+apt install tcpdump -y
 
 mkdir /opt/Tools
 
@@ -23,6 +30,7 @@ mkdir /opt/Tools/github/
 cd /opt/Tools/github/ && git clone https://github.com/OJ/gobuster.git && cd gobuster && go get && go build && go install
 apt install -y burpsuite
 mkdir /usr/share/wordlists/Seclists && cd /usr/share/wordlists/Seclists/ && git clone https://github.com/danielmiessler/SecLists.git
+
 
 # Instalação de Ferramentas Para Windows
 mkdir /opt/Tools/windows-resoures
