@@ -34,4 +34,5 @@ mkdir /usr/share/wordlists/Seclists && cd /usr/share/wordlists/Seclists/ && git 
 
 # Instalação de Ferramentas Para Windows
 mkdir /opt/Tools/windows-resoures
-wget https://the.earth.li/~sgtatham/putty/latest/w64/plink.exe -O /opt/Tools/windows-resources/plink.exe
+git clone https://gitlab.com/kalilinux/packages/windows-binaries.git && cd windows-binaries && rm -rf debian
+cd .. && wget https://the.earth.li/~sgtatham/putty/latest/w64/plink.exe -O /opt/Tools/windows-resources/plink.exe
