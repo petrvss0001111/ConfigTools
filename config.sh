@@ -22,18 +22,18 @@ echo "PATH=\$PATH:/root/go/bin" >> /root/.bashrc && echo "PATH=\$PATH:/root/go/b
 mkdir ~/Config/Packages && mv go1* ~/Config/Packages/
 
 
-# Instalação Python3
+# Python3 Install
 sudo apt-get install python3.9 -y
 apt install python3-pip
 
-# Instalação de Ferramentas Para Pentest
+# Install Github Tools for Pentest
 mkdir ~/Config/Github
 cd  ~/Config/Github && git clone https://github.com/OJ/gobuster.git && cd gobuster && go get && go build && go install
 apt install -y burpsuite
 mkdir /usr/share/wordlists/ && cd /usr/share/wordlists/ && git clone https://github.com/danielmiessler/SecLists.git
 
 
-# Instalação de Ferramentas Para Windows
+# Install Tools For Windows
 mkdir  ~/Config/WindowsResoures
 cd  ~/Config/WindowsResources
 git clone https://github.com/bitsadmin/wesng.git
