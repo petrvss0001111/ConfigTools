@@ -1,11 +1,10 @@
 #!/bin/bash
 
 # Essencials Tools
-apt install wget curl -y
+apt install wget curl nc -y
 apt install git make gcc -y
 apt install net-tools -y
 apt install libpcap-dev -y
-apt install nc -y
 
 # Essencials Tools II
 apt install mysql postgresql openssh-client -y
