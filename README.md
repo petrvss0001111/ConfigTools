@@ -1,8 +1,8 @@
 # Tools File Configuration
-- Repositório destinado a um script em shell para configuração de arquivos e ferramentas que utilizo no dia a dia de Sec.
+- The Repository intends to configure Linux for Hacking and Bug Bounty
 
 ## Installation
-- Instalação da ferramenta com bash
+- Install tool with bash
 - Attention: Execute as root/admin.
 
 ```bash
