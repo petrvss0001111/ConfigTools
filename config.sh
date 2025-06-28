@@ -1,15 +1,10 @@
 #!/bin/bash
 
 # Essencials Tools
-apt install wget curl nc -y
-apt install git make gcc -y
-apt install net-tools -y
-apt install libpcap-dev -y
+apt install wget curl nc git make gcc net-tools libpcap-dev -y
 
 # Essencials Tools II
-apt install mysql postgresql openssh-client -y
-apt install tcpdump -y
-apt install openssh -y
+apt install mysql-common postgresql openssh-client tcpdump ssh -y
 
 mkdir ~/Config && cd ~/Config
 
@@ -22,13 +17,12 @@ mkdir ~/Config/Packages && mv go1* ~/Config/Packages/
 
 
 # Python3 Install
-sudo apt-get install python3.9 -y
-apt install python3-pip
+sudo apt-get install python3.9 python3-pip -y
 
 # Install Github Tools for Pentest
 mkdir ~/Config/Github
 cd  ~/Config/Github && git clone https://github.com/OJ/gobuster.git && cd gobuster && go get && go build && go install
-apt install -y burpsuite
+apt install burpsuite -y
 mkdir /usr/share/wordlists/ && cd /usr/share/wordlists/ && git clone https://github.com/danielmiessler/SecLists.git
 
 
